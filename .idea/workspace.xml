@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f339b4d4-3824-47f6-82f1-ecf725ea1a44" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/linux_scripts/linuxSysInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/linux_scripts/linuxSysInfo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/basics/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/basics/variables.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.linuxSysInfo">
+  <component name="RunManager" selected="Python.variables">
     <configuration name="helloWorld" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Python_code" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -170,8 +170,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.linuxSysInfo" />
         <item itemvalue="Python.variables" />
+        <item itemvalue="Python.linuxSysInfo" />
         <item itemvalue="Python.hello_world" />
         <item itemvalue="Python.helloWorld" />
       </list>

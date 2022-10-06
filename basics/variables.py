@@ -27,3 +27,26 @@ print(myTuple[1])
 
 # use slices to get parts of a sequence
 print(myList[1:5])
+print(myList[1:5:2])
+
+# you can use  slices to reverse a sequence
+print(myList[::-1])
+
+# dictionaries are accessed via keys
+print(myDict["One"])
+
+# ERROR: variables of different types cannot be combined
+print("String type " + str(123))
+
+# Global vs Local variables in functions
+def someFunction():
+    global myStr
+    myStr = "def"
+    print(myStr)
+
+someFunction()
+print(myStr)
+
+## del myStr
+## print(myStr)
+
