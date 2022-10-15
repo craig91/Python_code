@@ -1,5 +1,4 @@
 import tkinter
-from tkinter import *
 
 window_main = tkinter.Tk(className = 'Tkinter - Example', )
 window_main.geometry("400x200")
