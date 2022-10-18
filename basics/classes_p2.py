@@ -20,3 +20,4 @@ class Dog:
 jack = Dog('Jack', 'Husky', 5, tired=False)
 print(jack.Sleep())
 print(jack.Age)
+print(jack.Breed)
