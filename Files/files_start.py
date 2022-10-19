@@ -1,16 +1,15 @@
 def main():
-    # Open a file for writing and create it if it doesn't exist
-    myfile = open("textfile.txt", "w+")
+    f = open("textfile.txt", "w+")
 
-    # Open the file for appending text to the end
-
-    # write some lines of data into the file
     for i in range(10):
-        myfile.write("This is some text\n")
-    # close the file when done
-    myfile.close()
+        f.write("This is line %d\r\n" % (i+1))
+    f.close()
 
+    f = open("textfile.txt", "r")
+    if f.mode == "r":
+        fl = f.readlines()
+        for x in fl:
+            print(x)
 
-
-    if __name__ == "__main__":
-        main()
+if __name__== "__main__":
+    main()
