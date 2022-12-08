@@ -1,7 +1,7 @@
 # importing the required modules
 import platform
 from datetime import datetime
-# import psutil
+import psutil
 import os
 
 # First We will print the basic system information
