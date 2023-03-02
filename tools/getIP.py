@@ -1,5 +1,6 @@
-from sys import platform
+import socket
+hostname = socket.gethostname()
+IPAddr = socket.gethostbyname(hostname)
 
-if platform == 'linux' or platform == 'linux2':
-    ip = sb.run(["ifconfig", "getifaddr", "en0"]), capture_output = True)
-    
+print("Your computer host name is " + hostname)
+print("Your computer IP Address is: " + IPAddr)
