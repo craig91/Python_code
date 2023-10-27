@@ -1,4 +1,4 @@
-#Fundanental Data Types (int and float)
+#Fundamental Data Types (int and float)
 #floating point number is a number with a decimal point
 # A float takes up more memory than an integer 
 # Integers --> Whole numbers were used
@@ -30,3 +30,6 @@ print(round(3.1))
 print(round(3.9))
 
 print(abs(-20))
+
+print(bin(5))
+print(int('0b101', 2))
