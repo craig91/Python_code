@@ -16,10 +16,17 @@
 
 
 # print(type(0.00001))
-val = 6
+# val = 6
 # print(bin(val))
 # print(id(val))
 # print(hex(id(val)))
 
-print(2 ** 8)
-print(2 // 4)
+# print(2 ** 8)
+# print(2 // 4)
+# print(5%4)
+
+# math functions
+print(round(3.1))
+print(round(3.9))
+
+print(abs(-20))
