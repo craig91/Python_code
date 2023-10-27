@@ -42,12 +42,28 @@ name = 'Johnny'
 age = 55
 
 # Without format
-print('hi ' + name + '. You are ' + str(age) + ' years old')
+# print('hi ' + name + '. You are ' + str(age) + ' years old')
 
 # With format
-print(f'hi {name}. You are {age} years old')
+# print(f'hi {name}. You are {age} years old')
 
 # This f is a new feature of python 3
 
 # python2 style
-print('hi {}. You are {} years old'.format(name, age))
+# print('hi {}. You are {} years old'.format(name, age))
+
+
+selfish = '01234567'
+
+# print(selfish[0])
+# print(selfish[7])
+# print(selfish)
+
+#[start:stop:stepover]
+
+print(selfish[0:8:2])
+print(selfish[1:])
+print(selfish[:5])
+print(selfish[::1])
+print(selfish[-1])
+print(selfish[::-1])
