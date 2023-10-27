@@ -52,6 +52,7 @@ age = 55
 # python2 style
 # print('hi {}. You are {} years old'.format(name, age))
 
+# String indexing
 
 selfish = '01234567'
 
@@ -67,3 +68,4 @@ print(selfish[:5])
 print(selfish[::1])
 print(selfish[-1])
 print(selfish[::-1])
+
