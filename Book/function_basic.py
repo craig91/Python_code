@@ -29,3 +29,10 @@ def describe_pet(animal_type, pet_name):
 
 describe_pet('cat', 'ame')
 describe_pet(pet_name='jacob', animal_type='alpaca') ## keyword arg ignores order
+
+def describe_pet2(pet_name2, animal_type2='dog'):
+    print(f"\nI have a {animal_type2}")
+    print(f"His name is {pet_name2.title()}")
+
+describe_pet2("Jimmy")
+describe_pet2("mr.oink", animal_type2='pig', ) ## when using a default value, positional args apply in this case.
