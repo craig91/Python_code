@@ -47,13 +47,36 @@ def make_shirt2(size="Large", message="I love python"):
 
 
 
-make_shirt("Large", "I am too sexy for this shirt")
-make_shirt(message="I am a baseball fan", size="Medium")
-make_shirt2()
+# make_shirt("Large", "I am too sexy for this shirt")
+# make_shirt(message="I am a baseball fan", size="Medium")
+# make_shirt2()
 
 def describe_city(city, country):
     print(f"\n{city} is in {country}")
 
-describe_city("Reykjavik", "Iceland")
-describe_city("Cape Town", "South Africa")
-describe_city("Moscow", "Russia")
+# describe_city("Reykjavik", "Iceland")
+# describe_city("Cape Town", "South Africa")
+# describe_city("Moscow", "Russia")
+
+def get_formatted_name(first_name, last_name):
+    """Return a full name, neatly formatted"""
+    full_name = f"{first_name} {last_name}"
+    return full_name.title()
+
+musician = get_formatted_name('jimi', 'hendrix')
+print(musician)
+
+
+## optional param
+def get_formatted_name2(first_name, last_name, middle_name=''):
+    if middle_name:
+        full_name = f"{first_name} {middle_name} {last_name}"
+    else:
+        full_name = f"{first_name} {last_name}"
+    return full_name.title()
+
+
+musician2 = get_formatted_name2('ray', 'charles')
+print(musician2)
+musician2 = get_formatted_name2('john', 'booth', 'wilkes')
+print(musician2)
