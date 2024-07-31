@@ -1,7 +1,13 @@
 class FancyCar():
-    pass
+    wheels = 4
+    def driveFast(self):
+        print("Driving so fast")
 
-print(type(FancyCar))
+
+
+
 
 my_car = FancyCar()
-print(type(my_car))
+print(my_car.wheels)
+
+my_car.driveFast()
