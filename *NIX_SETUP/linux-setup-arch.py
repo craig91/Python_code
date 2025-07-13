@@ -5,6 +5,7 @@ import socket
 import platform
 import psutil
 from byte_converter import bytes_to_gb
+import subprocess
 
 print("Architecture:", platform.architecture()[0])
 usage = psutil.disk_usage('/')
@@ -17,12 +18,30 @@ s.connect(("1.1.1.1", 80))
 print("Your IP Address:" , s.getsockname()[0])
 s.close()
 
-print("Your Public IP:" ,json.loads(requests.get("https://api.seeip.org/jsonip?").text)["ip"])
-country = json.loads(requests.get("https://api.seeip.org/geoip").text) ["country"]
-city = json.loads(requests.get("https://api.seeip.org/geoip").text) ["city"]
 
-print("Location: " + city + "," + country)
-# print(json.loads(requests.get("https://api.seeip.org/geoip").text)["country"])
+# print("Your Public IP:" ,json.loads(requests.get("https://api.seeip.org/jsonip?").text)["ip"])
+# country = json.loads(requests.get("https://api.seeip.org/geoip").text) ["country"]
+# city = json.loads(requests.get("https://api.seeip.org/geoip").text) ["city"]
+
+# print("Location: " + city + "," + country)
+
+# ping_result = subprocess.run(["ping", "-c", "1", "8.8.8.8"], capture_output=True)
+# if (ping_result.returncode == 0):
+#     print("Connection working")
+#     print("Your Public IP:" ,json.loads(requests.get("https://api.seeip.org/jsonip?").text)["ip"])
+#     country = json.loads(requests.get("https://api.seeip.org/geoip").text) ["country"]
+#     city = json.loads(requests.get("https://api.seeip.org/geoip").text) ["city"]
+#     print("Location: " + city + "," + country)  
+# else:
+#     print("You have no internet")
+
+
+prog_array = ["firefox", "git", "neovim", "gcc", "make"]
+for prog in prog_array:
+    subprocess.run(["sudo", "pacman", "-S", prog], capture_output=True)
+    print(prog)
+
+
 
 
 # disk_partitions = psutil.disk_partitions()
