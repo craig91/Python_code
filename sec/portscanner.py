@@ -2,12 +2,17 @@ import sys
 import socket
 from datetime import datetime
 
-if len(sys.argv) == 2:
-    target = socket.gethostbyname(sys.argv[1])
-else:
+if len(sys.argv) != 2:
     print("Invalid amount of arguments")
     print("Syntax: python3 portscanner.py <ip>")
+    sys.exit(1)
 
+
+try:
+    target = socket.gethostbyname(sys.argv[1])
+except socket.gaierror:
+    print("Hostname could not be resolved")
+    sys.exit(1)
 
 print('-' * 50)
 print("Scanning target " + target)
@@ -25,10 +30,6 @@ try:
 
 except KeyboardInterrupt:
     print("\nExiting Program")
-    sys.exit()
-
-except socket.gaierror:
-    print("Hostname could not be resolved.")
     sys.exit()
 
 except socket.error:
