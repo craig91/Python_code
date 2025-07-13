@@ -1,4 +1,6 @@
 import os
+import requests
+import json
 import socket
 import platform
 import psutil
@@ -12,9 +14,15 @@ print("Total disk space available: ", bytes_to_gb(usage.free))
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 s.connect(("1.1.1.1", 80))
-print(s.getsockname()[0])
+print("Your IP Address:" , s.getsockname()[0])
 s.close()
 
+print("Your Public IP:" ,json.loads(requests.get("https://api.seeip.org/jsonip?").text)["ip"])
+country = json.loads(requests.get("https://api.seeip.org/geoip").text) ["country"]
+city = json.loads(requests.get("https://api.seeip.org/geoip").text) ["city"]
+
+print("Location: " + city + "," + country)
+# print(json.loads(requests.get("https://api.seeip.org/geoip").text)["country"])
 
 
 # disk_partitions = psutil.disk_partitions()
