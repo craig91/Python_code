@@ -15,9 +15,15 @@ def firstLast(sequence):
 # even_odd_sums([10,20,30,40,50,60]) --> [90, 120]
 
 def even_odd_sums(sequence):
+     evenSum = 0
+     oddSum = 0
      for val in sequence:
-         sum = val += val
-     return sequence
+        position = sequence.index(val) 
+        #print("index", position)
+        if position % 2 == 0:
+            evenSum += val
+        else:
+            oddSum += val
+     return (evenSum, oddSum)
 
-
-print(even_odd_sums([1,2,3,34,45,6,7,6]))
+print(even_odd_sums([10,20,30,40,50,60]))
